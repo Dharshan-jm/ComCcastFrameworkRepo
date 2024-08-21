@@ -20,6 +20,8 @@ public class DemoContactTest extends BaseClass {
 	public void contacttest() throws EncryptedDocumentException, IOException {
 		
 		HomePage hp=new HomePage(driver);
+		
+		//homepage 
 		hp.clickContactLink();
 		
 		String lastname = excelutil.getDataFromExcel("org", 4, 2)+javautil.getRandomNumber();
